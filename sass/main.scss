@@ -1,0 +1,94 @@
+// IMPOPRT
+@import "global";
+// IMPOPRT
+
+// TOP HEADER
+.top_header {
+  margin: 0;
+  min-height: 20px;
+  width: 100vw;
+  background: black;
+}
+// TOP HEADER
+
+// HERO SECTION
+.hero_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: 100px auto;
+  .hero_section_left {
+    ul {
+      display: flex;
+
+      li {
+        .reddot {
+          background-color: red;
+          border-radius: 30px;
+          height: 30px;
+          width: 30px;
+          border: black 3px solid;
+
+          &:hover {
+            border-radius: 25px;
+            transition: 0.5s;
+            height: 40px;
+            width: 40px;
+            border: black 3px solid;
+          }
+        }
+        .greendot {
+          background-color: greenyellow;
+          border: black 3px solid;
+          border-radius: 30px;
+          height: 30px;
+          width: 30px;
+          &:hover {
+            border-radius: 25px;
+            transition: 0.5s;
+            height: 40px;
+            width: 40px;
+            border: black 3px solid;
+          }
+        }
+        .yellowdot {
+          background-color: yellow;
+          border: black 3px solid;
+          border-radius: 30px;
+          height: 30px;
+          width: 30px;
+          &:hover {
+            border-radius: 25px;
+            transition: 0.5s;
+            height: 40px;
+            width: 40px;
+            border: black 3px solid;
+          }
+        }
+        padding: 10px;
+      }
+    }
+  }
+  .hero_section_right {
+    background-image: url("/images/my/main.jpg");
+    background-size: cover;
+    background-position: top center;
+    height: 550px;
+    width: 500px;
+    border: 10px solid black;
+    position: relative;
+    &::after {
+      content: "";
+      top: 9px;
+      height: 100%;
+      width: 100%;
+      left: -30px;
+      position: absolute;
+      border: 10px solid crimson;
+      z-index: -1;
+    }
+  }
+}
+// HERO SECTION
