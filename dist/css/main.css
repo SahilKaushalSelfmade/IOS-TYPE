@@ -93,11 +93,7 @@ img {
 }
 
 .hero_section .hero_section_right {
-<<<<<<< HEAD
-  background-image: url("/images/my/main.jpg");
-=======
-  background-image: url("../images/my/main.jpg");
->>>>>>> a9bf07e145e0c968a644f79fadbcbf24e75e7b2e
+  background-image: url("../../images/my/main.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
