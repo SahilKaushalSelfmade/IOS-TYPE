@@ -12,9 +12,12 @@ ul {
 section {
   max-width: 1200px;
   text-align: center;
-  margin: 0 auto;
+  margin: 100px auto;
   margin-bottom: 100px;
 }
 img {
   width: 100%;
+}
+.border_bottom {
+  border-bottom: 1px solid black;
 }

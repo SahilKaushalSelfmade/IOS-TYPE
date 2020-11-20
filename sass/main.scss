@@ -4,7 +4,7 @@
 
 // TOP HEADER
 .top_header {
-  margin-bottom: 100px;
+  // margin-bottom: 100px;
   min-height: 20px;
   width: 100vw;
   background: black;
@@ -97,11 +97,12 @@
 // SERVICES SECTION
 .services_section {
   &_header {
-    margin-bottom: 50px;
   }
   &_columns {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
 
     &_column {
       background-color: black;
@@ -115,7 +116,7 @@
       border: 2px solid dotted white;
       &:hover {
         padding: 20px;
-        background-color: #add8e6;
+        background-color: #4299f0;
         transition: 0.5s ease-in-out;
       }
     }
