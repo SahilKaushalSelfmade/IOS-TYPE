@@ -145,7 +145,7 @@ img {
 }
 
 .services_section_columns_column {
-  background-color: black;
+  background-color: #303030;
   color: white;
   text-align: center;
   padding: 10px;
@@ -158,6 +158,84 @@ img {
 .services_section_columns_column:hover {
   padding: 20px;
   background-color: #4299f0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.work_section_header {
+  margin-bottom: 20px;
+}
+
+.work_section_cards {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 16px;
+}
+
+.work_section_cards_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 300px;
+  height: 220px;
+  position: relative;
+  margin: 40px 10px;
+  border-radius: 12px;
+  background-color: #16384c;
+  -webkit-box-shadow: -1rem 0 3rem #000;
+          box-shadow: -1rem 0 3rem #000;
+  padding: 20px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.work_section_cards_card:hover {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+  height: 350px;
+}
+
+.work_section_cards_card:hover > .work_section_cards_card_desc {
+  visibility: visible;
+  opacity: 1;
+}
+
+.work_section_cards_card_image {
+  margin: 0 auto;
+  position: relative;
+  height: 250px;
+  top: -30px;
+  width: 250px;
+  z-index: 1;
+}
+
+.work_section_cards_card_image img {
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.work_section_cards_card_desc {
+  color: white;
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
