@@ -9,6 +9,10 @@ html {
   background: #b9d4d4;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
 }
@@ -148,7 +152,7 @@ img {
 }
 
 .services_section_columns_column {
-  background-color: #303030;
+  background-color: #16384c;
   color: white;
   text-align: center;
   padding: 10px;
@@ -233,7 +237,7 @@ img {
 .work_section_cards_card_image img {
   border-radius: 8px;
   max-width: 100%;
-  max-height: 100%;
+  min-height: 200px;
 }
 
 .work_section_cards_card_desc {
