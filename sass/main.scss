@@ -4,7 +4,7 @@
 
 // TOP HEADER
 .top_header {
-  margin: 0;
+  margin-bottom: 100px;
   min-height: 20px;
   width: 100vw;
   background: black;
@@ -18,7 +18,6 @@
   align-items: center;
   align-content: center;
   text-align: center;
-  margin: 100px auto;
   .hero_section_left {
     ul {
       display: flex;
@@ -94,3 +93,19 @@
   }
 }
 // HERO SECTION
+
+// SERVICES SECTION
+.services_section {
+  &_header {
+    margin-bottom: 50px;
+  }
+  &_columns {
+    display: flex;
+    justify-content: center;
+    &_column {
+      text-align: center;
+      width: 30%;
+    }
+  }
+}
+// SERVICES SECTION

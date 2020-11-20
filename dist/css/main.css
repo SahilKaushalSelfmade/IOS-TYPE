@@ -12,16 +12,19 @@ ul {
   list-style: none;
 }
 
-.section {
+section {
   max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .top_header {
-  margin: 0;
+  margin-bottom: 100px;
   min-height: 20px;
   width: 100vw;
   background: black;
@@ -33,7 +36,6 @@ img {
   align-items: center;
   align-content: center;
   text-align: center;
-  margin: 100px auto;
 }
 
 .hero_section .hero_section_left ul {
@@ -112,4 +114,18 @@ img {
   position: absolute;
   border: 10px solid crimson;
   z-index: -1;
+}
+
+.services_section_header {
+  margin-bottom: 50px;
+}
+
+.services_section_columns {
+  display: flex;
+  justify-content: center;
+}
+
+.services_section_columns_column {
+  text-align: center;
+  width: 30%;
 }
