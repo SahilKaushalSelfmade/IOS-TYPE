@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -31,14 +32,23 @@ img {
 }
 
 .hero_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   text-align: center;
 }
 
 .hero_section .hero_section_left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -56,6 +66,7 @@ img {
 
 .hero_section .hero_section_left ul li .reddot:hover {
   border-radius: 25px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   height: 40px;
   width: 40px;
@@ -72,6 +83,7 @@ img {
 
 .hero_section .hero_section_left ul li .greendot:hover {
   border-radius: 25px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   height: 40px;
   width: 40px;
@@ -88,6 +100,7 @@ img {
 
 .hero_section .hero_section_left ul li .yellowdot:hover {
   border-radius: 25px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   height: 40px;
   width: 40px;
@@ -121,11 +134,28 @@ img {
 }
 
 .services_section_columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .services_section_columns_column {
+  background-color: black;
+  color: white;
   text-align: center;
+  padding: 10px;
+  margin: 10px;
+  line-height: 1.5;
   width: 30%;
+  border: 2px solid dotted white;
+}
+
+.services_section_columns_column:hover {
+  padding: 20px;
+  background-color: #add8e6;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }

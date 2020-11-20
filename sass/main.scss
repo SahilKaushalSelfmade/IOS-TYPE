@@ -102,9 +102,22 @@
   &_columns {
     display: flex;
     justify-content: center;
+
     &_column {
+      background-color: black;
+      color: white;
       text-align: center;
+      padding: 10px;
+
+      margin: 10px;
+      line-height: 1.5;
       width: 30%;
+      border: 2px solid dotted white;
+      &:hover {
+        padding: 20px;
+        background-color: #add8e6;
+        transition: 0.5s ease-in-out;
+      }
     }
   }
 }
