@@ -100,6 +100,7 @@
 // SERVICES SECTION
 .services_section {
   &_header {
+    padding: 10px;
   }
   &_columns {
     position: relative;
@@ -131,6 +132,8 @@
 // WORKS
 .work_section {
   &_header {
+    padding: 10px;
+
     margin-bottom: 20px;
   }
   &_cards {
@@ -161,7 +164,7 @@
         visibility: visible;
         top: -50px;
         opacity: 1;
-        transition: 0.5s ease-in-out;
+        transition: 0.3s ease-in-out;
       }
       &_image {
         margin: 0 auto;
@@ -191,3 +194,23 @@
 }
 
 // WORKS
+
+// CONTACT
+.contact_section {
+  &_head {
+    padding: 10px;
+  }
+  &_body {
+    &_cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      &_card {
+        padding: 10px;
+        max-width: 300px;
+      }
+    }
+  }
+}
+// CONTACT

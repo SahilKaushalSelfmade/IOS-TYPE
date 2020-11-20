@@ -7,6 +7,7 @@
 
 html {
   background: #b9d4d4;
+  overflow-x: hidden;
 }
 
 a {
@@ -139,6 +140,10 @@ img {
   z-index: -1;
 }
 
+.services_section_header {
+  padding: 10px;
+}
+
 .services_section_columns {
   position: relative;
   display: -webkit-box;
@@ -173,6 +178,7 @@ img {
 }
 
 .work_section_header {
+  padding: 10px;
   margin-bottom: 20px;
 }
 
@@ -221,8 +227,8 @@ img {
   visibility: visible;
   top: -50px;
   opacity: 1;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .work_section_cards_card_image {
@@ -248,4 +254,27 @@ img {
   opacity: 0;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+}
+
+.contact_section_head {
+  padding: 10px;
+}
+
+.contact_section_body_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact_section_body_cards_card {
+  padding: 10px;
+  max-width: 300px;
 }
