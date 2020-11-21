@@ -13,70 +13,20 @@
 
 // HERO SECTION
 .hero_section {
-  text-align: center;
+  padding: 0 20px 0 30px;
   &_position {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
     align-content: center;
+
     .hero_section_left {
-      ul {
-        display: flex;
-
-        li {
-          .reddot {
-            background-color: red;
-            border-radius: 30px;
-            height: 30px;
-            width: 30px;
-            border: black 3px solid;
-
-            &:hover {
-              border-radius: 25px;
-              transition: 0.5s;
-              height: 40px;
-              width: 40px;
-              border: black 3px solid;
-            }
-          }
-          .greendot {
-            background-color: greenyellow;
-            border: black 3px solid;
-            border-radius: 30px;
-            height: 30px;
-            width: 30px;
-            &:hover {
-              border-radius: 25px;
-              transition: 0.5s;
-              height: 40px;
-              width: 40px;
-              border: black 3px solid;
-            }
-          }
-          .yellowdot {
-            background-color: yellow;
-            border: black 3px solid;
-            border-radius: 30px;
-            height: 30px;
-            width: 30px;
-            &:hover {
-              border-radius: 25px;
-              transition: 0.5s;
-              height: 40px;
-              width: 40px;
-              border: black 3px solid;
-            }
-          }
-          padding: 10px;
-        }
-      }
-    }
-    .hero_section_right {
+      margin-bottom: 50px;
       background-image: url("../../images/my/main.jpg");
       background-size: cover;
-      background-position: top center;
+      background-position: top right;
       background-repeat: no-repeat;
-
       height: 550px;
       width: 500px;
       border: 10px solid black;
@@ -92,9 +42,62 @@
         z-index: -1;
       }
     }
+    .hero_section_right {
+      &_position {
+        ul {
+          display: flex;
+          li {
+            padding: 10px;
+
+            .reddot {
+              background-color: red;
+              border-radius: 30px;
+              height: 30px;
+              width: 30px;
+              border: black 3px solid;
+
+              &:hover {
+                border-radius: 25px;
+                transition: 0.5s;
+                height: 40px;
+                width: 40px;
+                border: black 3px solid;
+              }
+            }
+            .greendot {
+              background-color: greenyellow;
+              border: black 3px solid;
+              border-radius: 30px;
+              height: 30px;
+              width: 30px;
+              &:hover {
+                border-radius: 25px;
+                transition: 0.5s;
+                height: 40px;
+                width: 40px;
+                border: black 3px solid;
+              }
+            }
+            .yellowdot {
+              background-color: yellow;
+              border: black 3px solid;
+              border-radius: 30px;
+              height: 30px;
+              width: 30px;
+              &:hover {
+                border-radius: 25px;
+                transition: 0.5s;
+                height: 40px;
+                width: 40px;
+                border: black 3px solid;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
-
 // HERO SECTION
 
 // SERVICES SECTION

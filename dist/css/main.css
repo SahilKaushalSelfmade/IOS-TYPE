@@ -40,16 +40,18 @@ img {
 }
 
 .hero_section {
-  text-align: center;
+  padding: 0 20px 0 30px;
 }
 
 .hero_section_position {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -57,71 +59,11 @@ img {
       align-content: center;
 }
 
-.hero_section_position .hero_section_left ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.hero_section_position .hero_section_left ul li {
-  padding: 10px;
-}
-
-.hero_section_position .hero_section_left ul li .reddot {
-  background-color: red;
-  border-radius: 30px;
-  height: 30px;
-  width: 30px;
-  border: black 3px solid;
-}
-
-.hero_section_position .hero_section_left ul li .reddot:hover {
-  border-radius: 25px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  height: 40px;
-  width: 40px;
-  border: black 3px solid;
-}
-
-.hero_section_position .hero_section_left ul li .greendot {
-  background-color: greenyellow;
-  border: black 3px solid;
-  border-radius: 30px;
-  height: 30px;
-  width: 30px;
-}
-
-.hero_section_position .hero_section_left ul li .greendot:hover {
-  border-radius: 25px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  height: 40px;
-  width: 40px;
-  border: black 3px solid;
-}
-
-.hero_section_position .hero_section_left ul li .yellowdot {
-  background-color: yellow;
-  border: black 3px solid;
-  border-radius: 30px;
-  height: 30px;
-  width: 30px;
-}
-
-.hero_section_position .hero_section_left ul li .yellowdot:hover {
-  border-radius: 25px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  height: 40px;
-  width: 40px;
-  border: black 3px solid;
-}
-
-.hero_section_position .hero_section_right {
+.hero_section_position .hero_section_left {
+  margin-bottom: 50px;
   background-image: url("../../images/my/main.jpg");
   background-size: cover;
-  background-position: top center;
+  background-position: top right;
   background-repeat: no-repeat;
   height: 550px;
   width: 500px;
@@ -129,7 +71,7 @@ img {
   position: relative;
 }
 
-.hero_section_position .hero_section_right::after {
+.hero_section_position .hero_section_left::after {
   content: "";
   top: 9px;
   height: 100%;
@@ -138,6 +80,67 @@ img {
   position: absolute;
   border: 10px solid crimson;
   z-index: -1;
+}
+
+.hero_section_position .hero_section_right_position ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero_section_position .hero_section_right_position ul li {
+  padding: 10px;
+}
+
+.hero_section_position .hero_section_right_position ul li .reddot {
+  background-color: red;
+  border-radius: 30px;
+  height: 30px;
+  width: 30px;
+  border: black 3px solid;
+}
+
+.hero_section_position .hero_section_right_position ul li .reddot:hover {
+  border-radius: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 40px;
+  width: 40px;
+  border: black 3px solid;
+}
+
+.hero_section_position .hero_section_right_position ul li .greendot {
+  background-color: greenyellow;
+  border: black 3px solid;
+  border-radius: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+.hero_section_position .hero_section_right_position ul li .greendot:hover {
+  border-radius: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 40px;
+  width: 40px;
+  border: black 3px solid;
+}
+
+.hero_section_position .hero_section_right_position ul li .yellowdot {
+  background-color: yellow;
+  border: black 3px solid;
+  border-radius: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+.hero_section_position .hero_section_right_position ul li .yellowdot:hover {
+  border-radius: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 40px;
+  width: 40px;
+  border: black 3px solid;
 }
 
 .services_section_header {
