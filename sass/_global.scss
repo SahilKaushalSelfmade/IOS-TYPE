@@ -6,9 +6,11 @@
 html {
   background: rgb(185, 212, 212);
   overflow-x: hidden;
+  word-wrap: break-word;
 }
 a {
   text-decoration: none;
+  color: white;
 }
 ul {
   list-style: none;
@@ -16,7 +18,7 @@ ul {
 section {
   max-width: 1200px;
   text-align: center;
-  margin: 100px auto;
+  margin: 60px auto;
   margin-bottom: 100px;
 }
 img {

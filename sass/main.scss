@@ -1,10 +1,10 @@
 // IMPOPRT
 @import "global";
+@import "mediaqueries";
 // IMPOPRT
 
 // TOP HEADER
 .top_header {
-  // margin-bottom: 100px;
   min-height: 20px;
   width: 100vw;
   background: black;
@@ -17,12 +17,12 @@
   &_position {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     align-content: center;
 
     .hero_section_left {
-      margin-bottom: 50px;
+      margin-bottom: 60px;
       background-image: url("../../images/my/main.jpg");
       background-size: cover;
       background-position: top right;
@@ -103,29 +103,32 @@
 // SERVICES SECTION
 .services_section {
   &_header {
-    padding: 10px;
+    padding: 0 40px;
+    margin-bottom: 60px;
   }
   &_columns {
-    position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 
     &_column {
+      border-radius: 12px;
+      box-shadow: -1rem 0 3rem #000;
       background-color: #16384c;
       color: white;
       text-align: center;
-      padding: 10px;
-      margin: 10px;
+      padding: 10px 20px;
+      margin: 15px;
       line-height: 1.5;
-      max-width: 300px;
-      border: 2px solid dotted white;
+      max-width: 350px;
       &:hover {
         padding: 20px;
         background-color: #4299f0;
         align-items: center;
-
         transition: 0.5s ease-in-out;
+      }
+      &_logo {
+        padding: 20px 0;
       }
     }
   }
@@ -135,15 +138,15 @@
 // WORKS
 .work_section {
   &_header {
-    padding: 10px;
+    padding: 0 40px;
 
-    margin-bottom: 20px;
+    margin-bottom: 60px;
   }
   &_cards {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     border-radius: 16px;
 
@@ -161,13 +164,13 @@
       transition: 0.5s ease-in-out;
       &:hover {
         // transform: translateY(-1rem);
-        height: 300px;
+        height: 320px;
       }
       &:hover > &_desc {
         visibility: visible;
         top: -50px;
         opacity: 1;
-        transition: 0.3s ease-in-out;
+        transition: 0.6s ease-in-out;
       }
       &_image {
         margin: 0 auto;
@@ -195,23 +198,61 @@
     }
   }
 }
-
 // WORKS
 
 // CONTACT
 .contact_section {
   &_head {
-    padding: 10px;
+    padding: 0 40px;
+
+    margin-bottom: 60px;
   }
   &_body {
     &_cards {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-evenly;
+      align-content: center;
       align-items: center;
       &_card {
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-around;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: -1rem 0 3rem #000;
         padding: 10px;
-        max-width: 300px;
+        height: 200px;
+        width: 250px;
+        background-color: #4299f0;
+        &:hover {
+          background-color: #004992;
+          padding: 20px;
+          height: 220px;
+          width: 270px;
+          transition: 0.5s ease-in-out;
+        }
+        &_logo {
+          position: relative;
+          top: 35%;
+        }
+        &_desc {
+          position: relative;
+          color: whitesmoke;
+          top: 15% !important;
+          visibility: hidden;
+          opacity: 0;
+          font-size: 1.2rem;
+          font-weight: bolder;
+        }
+        &:hover > &_desc {
+          visibility: visible;
+          transition: 0.5s ease-in-out;
+          opacity: 1;
+        }
+        &:hover > &_logo {
+          visibility: hidden;
+        }
       }
     }
   }
